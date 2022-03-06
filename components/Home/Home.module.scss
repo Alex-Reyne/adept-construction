@@ -1,0 +1,12 @@
+.home__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../../public/home-image.jpg);
+  background-size: cover;
+
+  div {
+  }
+}
