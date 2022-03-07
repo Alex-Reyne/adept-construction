@@ -45,6 +45,33 @@
     .home__buttons {
       align-self: flex-start;
     }
+
+    @media screen and (max-width: 1200px) {
+      div {
+        margin-right: 0rem;
+      }
+    }
+
+    @media screen and (max-width: 850px) {
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 0rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      .home__buttons {
+        align-self: center;
+      }
+    }
   }
 
   .home__brand {
