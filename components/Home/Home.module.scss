@@ -7,6 +7,51 @@
   background: url(../../public/home-image.jpg);
   background-size: cover;
 
-  div {
+  .home__overlay {
+    height: 100%;
+    width: 100%;
+
+    background-color: #0606066d;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    z-index: 0;
   }
+
+  .home__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+
+    z-index: 1;
+
+    div {
+      margin-right: 25rem;
+    }
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: -3rem;
+
+      text-shadow: 5px 5px 5px var(--shadow-color);
+      color: var(--secondary-color);
+    }
+
+    h2 {
+      font-size: 3.25rem;
+    }
+
+    .home__buttons {
+      align-self: flex-start;
+    }
+  }
+
+  .home__brand {
+    color: var(--primary-color);
+  }
+}
+
+#home__contact_button {
+  margin-left: 1rem;
 }
