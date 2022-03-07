@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-import { About, Contact, Home, Values } from '../components/index';
+import { About, Contact, Home, Navbar, Values } from '../components/index';
 
 export default function Landing() {
   return (
@@ -14,6 +14,7 @@ export default function Landing() {
       </Head>
 
       <main className={styles.main}>
+        <Navbar />
         <Home />
         <About />
         <Values />
